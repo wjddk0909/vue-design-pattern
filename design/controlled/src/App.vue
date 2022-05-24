@@ -1,5 +1,5 @@
 <template>
-  <check-box></check-box>
+  <check-box :checked="checked"></check-box>
 </template>
 
 <script>
@@ -7,7 +7,12 @@ import CheckBox from './components/CheckBox.vue';
 
 export default {
   components: {
-    CheckBox
+    CheckBox,
+  },
+  data() {
+    return {
+      checked: false,
+    }
   },
 }
 </script>
